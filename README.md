@@ -1,9 +1,9 @@
-GraphRAG Knowledge Assistant
+GraphRAG Knowledge Assistant-
 A lightweight GraphRAG-based knowledge retrieval system designed to combine semantic search with graph-oriented relationships across technical documents and source code repositories.
 This project ingests PDFs and code repositories, generates embeddings using open-source transformer models, stores semantic vectors in ChromaDB, and builds graph relationships between knowledge nodes for improved contextual retrieval. A FastAPI backend and Streamlit frontend enable interactive querying across engineering and non-engineering data sources.
 
 
-Features
+Features-
 PDF and code repository ingestion
 Semantic search using Sentence Transformers
 Vector storage with ChromaDB
@@ -14,7 +14,7 @@ Modular and extensible architecture
 Foundation for Agentic Coding Tools and GraphRAG workflows
 
 
-Tech Stack
+Tech Stack-
 Python
 FastAPI
 Streamlit
@@ -36,10 +36,10 @@ graph_rag_system/
 ├── app.py
 └── requirements.txt
 
-Run the Project
+Run the Project-
 
-Install dependencies
-Bash
+Install dependencies-
+Bash-
 pip install -r requirements.txt
 2. Run ingestion
 Bash
@@ -57,7 +57,7 @@ python -m uvicorn api:app --reload
 Bash
 python -m streamlit run app.py
 
-Future Improvements
+Future Improvements-
 Semantic chunking
 Incremental updates for evolving data
 Dependency-aware GraphRAG relationships
@@ -66,5 +66,5 @@ Neo4j integration
 Notion / Azure document ingestion
 
 
-Goal
+Goal-
 The project aims to provide a practical GraphRAG foundation for engineering and non-engineering collaboration systems, enabling semantic retrieval and connected knowledge exploration for future AI-assisted development workflows.
