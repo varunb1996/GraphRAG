@@ -23,18 +23,7 @@ Sentence Transformers
 NetworkX
 PyPDF
 
-graph_rag_system/
-│
-├── data/
-├── embeddings/
-├── graph/
-├── ingest.py
-├── embed.py
-├── graph_builder.py
-├── retrieval.py
-├── api.py
-├── app.py
-└── requirements.txt
+
 
 Run the Project-
 
