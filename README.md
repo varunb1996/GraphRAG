@@ -23,7 +23,27 @@ Sentence Transformers
 NetworkX
 PyPDF
 
-
+graph_rag_system/
+│
+├── data/
+│   ├── pdfs/
+│   └── .gitkeep
+│
+├── embeddings/
+│   └── .gitkeep
+│
+├── graph/
+│   └── .gitkeep
+│
+├── ingest.py
+├── embed.py
+├── graph_builder.py
+├── retrieval.py
+├── api.py
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 
 Run the Project-
 
@@ -57,3 +77,46 @@ Notion / Azure document ingestion
 
 Goal-
 The project aims to provide a practical GraphRAG foundation for engineering and non-engineering collaboration systems, enabling semantic retrieval and connected knowledge exploration for future AI-assisted development workflows.
+
+
+## Setup Data
+
+Create the following folders:
+
+```plaintext
+data/pdfs/
+data/repos/
+data/processed/
+```
+
+Clone a repository inside:
+
+```plaintext
+data/repos/
+```
+
+Example:
+
+```bash
+git clone https://github.com/langchain-ai/langchain.git data/repos/langchain
+```
+
+Add your PDFs inside:
+
+```plaintext
+data/pdfs/
+```
+
+## Generated Artifacts
+
+The following files/folders are generated automatically during execution and are not included in the repository:
+
+```plaintext
+data/processed/documents.json
+embeddings/chroma_db/
+graph/knowledge_graph.gml
+```
+
+## Notes
+
+Large repositories, generated embeddings, vector databases, and processed artifacts are excluded using `.gitignore` to keep the repository lightweight and reproducible.
